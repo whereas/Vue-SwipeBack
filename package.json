@@ -1,17 +1,16 @@
 {
-  "name": "mint-ui-starter",
-  "description": "A Vue.js project",
-  "author": "yi.shyang@ele.me",
-  "private": true,
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  "name": "vue-swipeclose",
+  "version": "1.0.4",
+  "description": "A Vue.js2 plugin",
+  "author": "whereasdeveloper@163.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whereas/Vue-SwipeBack.git"
   },
-  "dependencies": {
-    "v-tap": "^3.0.2",
-    "vue": "^2.0.1",
-    "vue-router": "^2.2.1",
-    "vuex": "^2.3.1"
+  "main": "dist/Vue-SwipeClose.js",
+  "scripts": {
+    "build": "webpack -p --progress"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

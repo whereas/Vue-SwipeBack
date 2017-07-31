@@ -8,17 +8,23 @@
     <style>
     html,body{
       height: 100%;
+      width: 100%;
       padding: 0;
       margin: 0;
+      overflow: hidden;
+    }
+    [v-cloak] {
+      display: none;
     }
     </style>
   </head>
   <body>
-    <div id="app" style="height: 100%">
-      <swipeback-box></swipeback-box>
+    <div id="app" style="height: 100%" v-cloak>
+      <swipeback-box>
+        <h1>hello</h1>
+      </swipeback-box>
       <router-view></router-view>
     </div>
-    <script type='application/javascript' src="./dist/build.js"></script>
-    <!--<script type='application/javascript' src="./mui.mini.js"></script>-->
+    <script type='application/javascript' src="./index.js"></script>
   </body>
 </html>
