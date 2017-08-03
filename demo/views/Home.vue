@@ -1,7 +1,5 @@
 <template>
-  <div style="height: 100%;">
-    1231313
-  </div>
+  <swipeclose-box>123</swipeclose-box>
 </template>
 
 <script>

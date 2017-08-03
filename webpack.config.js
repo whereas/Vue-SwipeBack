@@ -5,7 +5,7 @@ module.exports = {
   entry: './demo/main.js',
   output: {
     path: path.resolve(__dirname, './demo/dist'),
-    publicPath: './dist/',
+    publicPath: '/demo/dist',
     filename: 'build.js'
   },
   module: {
@@ -38,6 +38,16 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    alias: {
+    'vue$': 'vue/dist/vue.js'
+    }
+  },
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true,
+    contentBase: "demo",
   },
   devtool: '#eval-source-map'
 }
