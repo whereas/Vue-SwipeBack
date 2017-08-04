@@ -3,6 +3,7 @@
 }
 html,body{
   height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -18,6 +19,8 @@ html,body{
 
 .height100view{
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .childview{
   position: absolute;
@@ -25,5 +28,14 @@ html,body{
   top: 0;
   height: 100%;
   width: 100%;
-  background: #ffffff;
+  background: lightblue;
+  overflow: hidden;
+}
+#app{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
 }

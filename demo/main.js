@@ -3,8 +3,10 @@ import VueRouter from 'vue-router'
 import SwipeClose from '../swipeclose.js'
 import './assets/style.css'
 
+const my_env = 1 ? 'app' : 'web'
+
 Vue.use(VueRouter)
-Vue.use(SwipeClose)
+Vue.use(SwipeClose, {enable: my_env=='app'?true:false})
 
 
 var router = new VueRouter({
